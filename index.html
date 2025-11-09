@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Stringling | Trusted Security Services — London</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stringling Security | London</title>
+  <link rel="stylesheet" href="./styletow.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome (icons) -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-dark text-light">
+
+<body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black border-bottom border-secondary">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <span class="brand-shield" aria-hidden="true"></span>
-        <span class="fw-bold text-warning">Stringling</span>
-        <small class="ms-1 text-muted">Security — London</small>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
-              aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"> <img class="logo-png" src="./images/stringling-logo - Copy.png" alt="" srcset=""> &nbsp;&nbsp;<span class="slogan-txt">Strong. Safe. Secure</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -42,269 +35,369 @@
   </nav>
 
   <!-- HERO -->
-  <header id="home" class="hero d-flex align-items-center justify-content-center text-center">
-    <div class="container">
+  <header id="home" class="hero d-flex align-items-center justify-content-center text-center mt-5">
+    <i class="bi bi-shield-lock float-icon" style="top:10%;left:15%;font-size:90px;"></i>
+    <i class="bi bi-camera-video float-icon" style="top:70%;right:10%;font-size:85px;animation-delay:1.2s;"></i>
+    <div class="container position-relative z-3">
       <div class="hero-inner">
-        <!-- Animated shield + lock -->
-        <div class="shield-wrap mb-4" aria-hidden="true">
-          <!-- SVG shield + lock -->
-          <svg class="shield-svg" viewBox="0 0 120 120" width="140" height="140" role="img" aria-label="Shield icon">
+        <div class="shield-wrap mb-4">
+
+          <!-- GOLD SHIELD -->
+          <svg class="shield-svg" viewBox="0 0 120 120" width="160" height="160">
             <defs>
-              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#ffd166"/>
-                <stop offset="1" stop-color="#ffb703"/>
+              <!-- ✅ Mint to white gradient -->
+              <linearGradient id="gradMint" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00FFCC" /> <!-- Mint -->
+                <stop offset="100%" stop-color="#FFFFFF" /> <!-- White -->
               </linearGradient>
-              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+
+              <!-- ✅ Glow filter for neon-mint effect -->
+              <filter id="glowHero" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="5" result="coloredBlur" />
                 <feMerge>
-                  <feMergeNode in="coloredBlur"/>
-                  <feMergeNode in="SourceGraphic"/>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
             </defs>
 
-            <path class="shield-body" d="M60 6 L18 20 v24c0 25 18 45 42 50 24-5 42-25 42-50V20L60 6z" fill="url(#g)" filter="url(#glow)"></path>
-            <rect x="48" y="46" width="24" height="20" rx="3" fill="#0b0b0b" stroke="#ffd166" stroke-width="2"></rect>
-            <path class="lock-shackle" d="M52 46c0-6 4-10 8-10s8 4 8 10" fill="none" stroke="#ffd166" stroke-width="2.4" stroke-linecap="round"/>
-            <polyline class="check" points="46,74 56,84 74,60" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+            <!-- ✅ Shield Body -->
+            <path class="shield-body" d="M60 6 L18 20 v24c0 25 18 45 42 50 24-5 42-25 42-50V20L60 6z"
+              fill="url(#gradMint)" filter="url(#glowHero)">
+            </path>
+
+            <!-- ✅ Lock Body -->
+            <rect x="48" y="46" width="24" height="20" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.5">
+            </rect>
+
+            <!-- ✅ Lock Shackle -->
+            <path class="lock-shackle" d="M52 46c0-6 4-10 8-10s8 4 8 10" fill="none" stroke="#00FFCC" stroke-width="2.4"
+              stroke-linecap="round" />
           </svg>
 
-          <!-- ring -->
-          <span class="pulse-ring" aria-hidden="true"></span>
+
+          <span class="pulse-ring"></span>
         </div>
 
-        <h1 class="display-6 fw-bold hero-title">Your Trusted Security Partner</h1>
-        <p class="lead text-muted hero-sub">Stringling protects people, property and events across London with trained teams and advanced surveillance.</p>
+        <h1 class="display-5 fw-bold hero-title text-glow">Your trusted security partner</h1>
+       
+        <p class="lead text-white hero-sub">Stringling secures London’s assets with precision surveillance and golden
+          reliability.</p>
 
-        <div class="d-flex justify-content-center gap-3 mt-3">
-          <a href="#contact" class="btn btn-warning btn-lg rounded-pill">Get a Quote <i class="fas fa-phone-alt ms-2"></i></a>
-          <a href="#services" class="btn btn-outline-light btn-lg rounded-pill">Our Services <i class="fas fa-shield-alt ms-2"></i></a>
+        <div class="d-flex justify-content-center gap-3 mt-3 fade-up">
+          <a href="#contact" class="btn btn-gold btn-lg rounded-pill px-4">Request Quote <i
+              class="fas fa-lock ms-2"></i></a>
+          <a href="#services" class="btn btn-outline-light btn-lg rounded-pill px-4">Explore Services <i
+              class="fas fa-shield-alt ms-2"></i></a>
         </div>
       </div>
     </div>
-
-    <!-- subtle decorative SVG circuit background (ARIA hidden) -->
-    <svg class="hero-bg-pattern" viewBox="0 0 800 400" aria-hidden="true" focusable="false">
-      <defs>
-        <linearGradient id="lineGrad" x1="0" x2="1"><stop offset="0" stop-color="#0ff" stop-opacity="0.06"/><stop offset="1" stop-color="#8cf" stop-opacity="0.04"/></linearGradient>
-      </defs>
-      <g stroke="url(#lineGrad)" stroke-width="1" fill="none">
-        <path d="M0 50 C150 80, 250 20, 400 50 S650 120, 800 80" />
-        <path d="M0 150 C150 180, 300 100, 800 160" />
-        <path d="M0 250 C200 220, 400 300, 800 260" />
-      </g>
-    </svg>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1581091012184-7b2f7c68f8e3?auto=format&fit=crop&w=1600&q=80"
-               alt="Security team" class="img-fluid rounded-4 shadow-lg reveal">
-        </div>
-        <div class="col-lg-6">
-          <h2 class="text-warning fw-bold reveal">About Stringling</h2>
-          <p class="text-muted reveal">
-            Based in <strong>London</strong>, Stringling provides trusted security solutions across corporate, hospitality, retail and events.
-            Our mission is to deliver professional protection that builds confidence and safety for our clients.
-          </p>
 
-          <p class="reveal"><strong>Vision:</strong> To be London’s most trusted security partner.</p>
+  <div class="sting-bg">
+    <section class="masking-section">
+      <div class="masking-section__wrapper">
 
-          <div class="row g-2 mt-3">
-            <div class="col-6 reveal">
-              <div class="feature-sm p-3 rounded-3 border border-secondary">
-                <i class="fas fa-user-check fa-lg text-warning me-2"></i> Certified Guards
-              </div>
+        <figure class="image-block image-1">
+          <img src="./images/one.jpeg" alt="Fashion model" />
+          <figcaption>Indigo Sculptural</figcaption>
+        </figure>
+        <figure class="image-block image-2">
+          <img src="./images/two.jpeg" alt="Fashion model" />
+          <figcaption>Cream Cropsleeves</figcaption>
+        </figure>
+        <figure class="image-block image-3">
+          <img src="./images/three.jpeg" alt="Fashion model" />
+          <figcaption>Black Slickfit</figcaption>
+        </figure>
+        <figure class="image-block image-4">
+          <img src="./images/four.jpeg" alt="Fashion model" />
+          <figcaption>Teal Modeva</figcaption>
+        </figure>
+        <figure class="image-block image-5">
+          <img src="./images/five.jpeg" alt="Fashion model" />
+          <figcaption>Burgundy Liberatio</figcaption>
+        </figure>
+        <figure class="image-block image-6">
+          <img src="./images/six.jpeg" alt="Fashion model" />
+          <figcaption>Ebony Half-cut</figcaption>
+        </figure>
+
+        <div class="masking-section__overlay-container">
+          <article class="overlay-content">
+            <h2 class="overlay-content__heading">
+              <span class="brand-mask">Stirling</span>
+            </h2>
+            <!-- <p class="overlay-content__helper">Scroll To Reveal</p> -->
+
+            <!-- ✅ Custom content div replacing video -->
+            <div class="overlay-card">
+              <section class="stringling-about bg-dark text-light">
+                <div class="container" style=" position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); ">
+                  <div class="text-center mt-5 mb-5">
+                    <h6 class="text-uppercase fw-semibold text-success mt-5">Professional Solutions for Peace of Mind
+                    </h6>
+                    <h2 class="fw-bold mb-3">Your Trusted Security Partner</h2>
+                    <p class="text-secondary mb-5">
+                      Creating a safe and secure environment with professional solutions for peace of mind.<br>
+                      Based in <strong>Glasgow</strong>, we proudly serve clients across Scotland — including
+                      <strong>Edinburgh, Stirling, Aberdeen,</strong> and <strong>Dundee</strong> — delivering tailored,
+                      high-quality security for corporate, event, hospitality, and technology sectors.
+                    </p>
+                  </div>
+
+                  <div class="row g-4">
+
+
+                    <!-- Mission -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
+                        <div class="card-body">
+                          <h5 class="text-success fw-bold mb-3">Mission</h5>
+                          <p class="text-light mb-0">
+                            To provide trusted, professional security solutions that ensure safety and confidence.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
+                        <div class="card-body">
+                          <h5 class="text-success fw-bold mb-3">Vision</h5>
+                          <p class="text-light mb-0">
+                            To be Scotland’s leading and most trusted security partner.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
+                        <div class="card-body">
+                          <h5 class="text-success fw-bold mb-3">Values</h5>
+                          <ul class="list-unstyled text-light mb-0">
+                            <li><strong>Integrity:</strong> Honest, transparent, respectful.</li>
+                            <li><strong>Professionalism:</strong> Highest industry standards.</li>
+                            <li><strong>Innovation:</strong> Modern, efficient solutions.</li>
+                            <li><strong>Commitment:</strong> Dedicated to client safety and satisfaction.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
+                        <div class="card-body">
+                          <h5 class="text-success fw-bold mb-3">Our Services</h5>
+                          <ul class="list-unstyled text-light mb-0">
+                            <li><strong>Corporate Security:</strong> Reliable protection for workplaces.</li>
+                            <li><strong>Event Security:</strong> Safe, seamless event coverage.</li>
+                            <li><strong>Hospitality Security:</strong> Professional protection for restaurants, pubs,
+                              and bars.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+
             </div>
-            <div class="col-6 reveal">
-              <div class="feature-sm p-3 rounded-3 border border-secondary">
-                <i class="fas fa-clock fa-lg text-warning me-2"></i> 24/7 Monitoring
-              </div>
-            </div>
-            <div class="col-6 mt-2 reveal">
-              <div class="feature-sm p-3 rounded-3 border border-secondary">
-                <i class="fas fa-bolt fa-lg text-warning me-2"></i> Rapid Response
-              </div>
-            </div>
-            <div class="col-6 mt-2 reveal">
-              <div class="feature-sm p-3 rounded-3 border border-secondary">
-                <i class="fas fa-video fa-lg text-warning me-2"></i> CCTV & Remote Monitoring
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+
+
+
+
 
   <!-- SERVICES -->
-  <section id="services" class="py-5 bg-black">
+  <section id="services" class="services text-center">
     <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="text-warning fw-bold reveal">Our Services</h2>
-        <p class="text-muted reveal">Tailored security for businesses, venues and private clients across London.</p>
-      </div>
-
+      <h2 class="text-glow mb-5">Our Security Solutions</h2>
       <div class="row g-4">
-        <!-- Service card -->
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-briefcase fa-2x text-warning"></i></div>
-              <h5>Corporate Security</h5>
-              <p class="text-muted small">Security teams for offices, retail and commercial estates.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fas fa-video"></i>
+            <h5>CCTV Monitoring</h5>
+            <p>24/7 intelligent surveillance systems to protect your space with precision and clarity.</p>
           </div>
         </div>
-
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-users fa-2x text-warning"></i></div>
-              <h5>Event & Crowd Management</h5>
-              <p class="text-muted small">Experienced crowd control and event protection teams.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fas fa-user-shield"></i>
+            <h5>On-Site Security</h5>
+            <p>Highly trained professionals ensuring complete safety and compliance, round-the-clock.</p>
           </div>
         </div>
-
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-glass-martini-alt fa-2x text-warning"></i></div>
-              <h5>Hospitality Security</h5>
-              <p class="text-muted small">Safe, discreet service for pubs, restaurants and hotels.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-tools fa-2x text-warning"></i></div>
-              <h5>Construction Site Security</h5>
-              <p class="text-muted small">24/7 guarding and CCTV to protect materials and machinery.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-video fa-2x text-warning"></i></div>
-              <h5>CCTV Installation & Monitoring</h5>
-              <p class="text-muted small">Smart camera systems with live monitoring and alerts.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 reveal">
-          <div class="card service-card h-100 bg-dark border-secondary">
-            <div class="card-body text-center">
-              <div class="icon-wrap mb-3"><i class="fas fa-user-shield fa-2x text-warning"></i></div>
-              <h5>VIP & Personal Protection</h5>
-              <p class="text-muted small">Discreet executive protection from trained operatives.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fas fa-network-wired"></i>
+            <h5>Cyber Protection</h5>
+            <p>Advanced digital defenses with golden-grade encryption and monitoring systems.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section id="stats" class="py-5">
-    <div class="container text-center">
-      <h3 class="text-warning fw-bold reveal">Stringling By Numbers</h3>
-      <p class="text-muted mb-4 reveal">Real experience and measurable outcomes.</p>
-
-      <div class="row g-4">
-        <div class="col-md-4 reveal">
-          <div class="stat-card p-4 rounded-3 border border-secondary">
-            <h2 class="counter" data-target="12000">0</h2>
-            <p class="small text-muted">Hours Patrolled</p>
-          </div>
-        </div>
-        <div class="col-md-4 reveal">
-          <div class="stat-card p-4 rounded-3 border border-secondary">
-            <h2 class="counter" data-target="5000">0</h2>
-            <p class="small text-muted">CCTV Installations</p>
-          </div>
-        </div>
-        <div class="col-md-4 reveal">
-          <div class="stat-card p-4 rounded-3 border border-secondary">
-            <h2 class="counter" data-target="350">0</h2>
-            <p class="small text-muted">Clients Protected</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST / CERTS -->
-  <section class="py-4 bg-dark border-top border-secondary">
-    <div class="container text-center">
-      <p class="text-muted mb-3 reveal">Trusted by organisations & certified to recognised standards</p>
-      <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap reveal">
-        <!-- Replace src with real logos -->
-        <img src="https://via.placeholder.com/120x40?text=Client+1" alt="Client 1" class="img-fluid" style="height:40px">
-        <img src="https://via.placeholder.com/120x40?text=Client+2" alt="Client 2" class="img-fluid" style="height:40px">
-        <img src="https://via.placeholder.com/120x40?text=ISO+9001" alt="ISO 9001" class="img-fluid" style="height:40px">
-        <img src="https://via.placeholder.com/120x40?text=SSIP" alt="SSIP" class="img-fluid" style="height:40px">
-      </div>
+  <!-- ABOUT -->
+  <section id="about" class="about text-center">
+    <div class="container">
+      <h2 class="text-glow mb-4">About Stringling Security</h2>
+      <p class="lead">Headquartered in London, Stringling Security provides cutting-edge safety solutions across
+        physical and digital domains. We blend innovation, intelligence, and integrity to secure what matters most.</p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card bg-black border-secondary shadow-sm reveal">
-            <div class="card-body p-4">
-              <h4 class="text-warning fw-bold mb-3">Contact Stringling — London</h4>
-              <p class="text-muted small mb-4">Send us a message and our team will respond quickly to discuss your security requirements.</p>
-
-              <form id="contactForm" novalidate>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label small text-muted">Name</label>
-                    <input type="text" id="name" class="form-control bg-transparent text-light border-secondary" placeholder="Your name" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label small text-muted">Email</label>
-                    <input type="email" id="email" class="form-control bg-transparent text-light border-secondary" placeholder="you@example.com" required>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label small text-muted">Message</label>
-                    <textarea id="message" rows="4" class="form-control bg-transparent text-light border-secondary" placeholder="Tell us about your requirement" required></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-warning w-100">Send Message</button>
-                  </div>
-                </div>
-              </form>
-
-              <div class="mt-3 text-muted small">
-                <i class="fas fa-map-marker-alt me-2 text-warning"></i> London, United Kingdom
-              </div>
-            </div>
+  <section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2>CONTACT</h2>
+        <div class="links">
+          <div class="link">
+            <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+          </div>
+          <div class="link">
+            <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
           </div>
         </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form>
+          <div class="form-item">
+            <input type="text" name="sender" required>
+            <label>Name:</label>
+          </div>
+          <div class="form-item">
+            <input type="text" name="email" required>
+            <label>Email:</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" name="message" required></textarea>
+            <label>Message:</label>
+          </div>
+          <button class="submit-btn">Send</button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-3 bg-black border-top border-secondary text-center text-muted">
-    <div class="container">
-      <small>&copy; <span id="year"></span> Stringling — Security Services. Based in London. All rights reserved.</small>
+  <footer class="super-footer">
+    <div class="container footer-grid">
+      <!-- About -->
+      <div class="footer-col">
+        <h3>About Stringling</h3>
+        <p>
+          Stringling is London’s trusted security partner — providing professional surveillance,
+          on-site guards, and advanced protection systems for businesses and communities.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p><i class="bi bi-geo-alt"></i> London, UK</p>
+        <p><i class="bi bi-telephone"></i> +44 1234 567 890</p>
+        <p><i class="bi bi-envelope"></i> info@stringling.com</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Stringling Security. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap & scripts -->
+
+  <!-- SECURITY ALERT WIDGET -->
+  <div class="security-alert-widget">
+    <div class="alert-btn" id="alertToggle">
+      <i class="fas fa-bell"></i>
+      <span class="pulse-alert"></span>
+    </div>
+
+    <div class="alert-panel" id="alertPanel">
+      <div class="alert-header d-flex justify-content-between align-items-center">
+        <h6 class="m-0 text-glow"><i class="fas fa-shield-alt me-2"></i>Security Alerts</h6>
+        <button class="btn-close btn-close-white" id="alertClose"></button>
+      </div>
+      <div class="alert-body mt-3">
+        <ul class="list-unstyled text-start small">
+          <li><i class="fas fa-lock me-2 text-warning"></i>System audit completed successfully.</li>
+          <li><i class="fas fa-wifi me-2 text-warning"></i>Network firewall upgraded to premium layer.</li>
+          <li><i class="fas fa-user-secret me-2 text-danger"></i>Unauthorized access blocked instantly.</li>
+          <li><i class="fas fa-camera me-2 text-success"></i>All perimeter cameras fully operational.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./index.js"></script>
+  <script>
+    // Security Alert Widget
+    const alertToggle = document.getElementById('alertToggle');
+    const alertPanel = document.getElementById('alertPanel');
+    const alertClose = document.getElementById('alertClose');
+    alertToggle.addEventListener('click', () => alertPanel.classList.toggle('active'));
+    alertClose.addEventListener('click', () => alertPanel.classList.remove('active'));
+  </script>
+
+
+  <script>
+    // Card fade-up animation on scroll
+    document.addEventListener("scroll", () => {
+      const reveals = document.querySelectorAll(".reveal-card");
+      reveals.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add("visible");
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="./indextwo.js"></script>
 </body>
+
 </html>
