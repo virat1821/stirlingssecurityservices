@@ -30,3 +30,79 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Got it 👍
+You want a **matching gradient background** for this section (black + yellow theme, professional security look like in your screenshot).
+
+Here’s a **CSS gradient** that perfectly complements your design — modern, dark, and focuses attention on the center images and glowing yellow text:
+
+---
+
+### 🎨 **Recommended Gradient Background**
+
+```css
+.masking-section {
+  background: radial-gradient(
+    circle at center,
+    #1a1a1a 0%,
+    #0a0a0a 40%,
+    #000000 70%,
+    #000000 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+```
+
+---
+
+### ⚡ If you want a hint of yellow glow (matching the "Stringling" text):
+
+```css
+.masking-section {
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 215, 0, 0.05) 0%,
+    #0a0a0a 30%,
+    #000000 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+```
+
+---
+
+### 🌈 If you prefer a more **cinematic gradient** (deep black + subtle golden tone):
+
+```css
+.masking-section {
+  background: linear-gradient(
+    160deg,
+    #000000 0%,
+    #111111 40%,
+    #1a1a00 80%,
+    #000000 100%
+  );
+}
+```
+
+---
+
+Would you like me to make it **animated** (slow glowing gradient effect to give it a premium motion feel)?
