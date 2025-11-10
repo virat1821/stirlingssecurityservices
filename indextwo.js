@@ -42,16 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
           duration: 0,
         }, 3.7);
 
-      // --- 3. Fade out the scroll helper ---
+     
       timeline.to(helper, {
         opacity: 0,
         zIndex: 0,
         yPercent: 300,
-        duration: 0.6,
+        duration: 0.3,
         ease: 'power3.inOut',
       }, 3.1);
 
-      // --- 4. Reveal custom div (overlayCard) instead of video ---
+ 
       timeline.fromTo(overlayCard, 
         { opacity: 0, scale: 1.1, yPercent: 20 },
         {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3.7
       );
 
-      // --- 5. Fly images completely out of frame ---
+   
       timeline
         .to(image1, { xPercent: -500, yPercent: 150, scale: 1.7 }, 3.5)
         .to(image2, { xPercent: 500, yPercent: 150, scale: 1.7 }, 3.5)
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .to(image5, { xPercent: -500, yPercent: -300, scale: 1.7 }, 3.5)
         .to(image6, { xPercent: 500, yPercent: -300, scale: 1.7 }, 3.5);
 
-      // --- 6. Create ScrollTrigger ---
+  
       ScrollTrigger.create({
         trigger: pinContainer,
         pin: true,
@@ -84,3 +84,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, pinContainer);
 });
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   gsap.registerPlugin(ScrollTrigger);
+
+//   const pinContainer = document.querySelector(".masking-section");
+//   const images = document.querySelectorAll(".image-block");
+//   const brand = document.querySelector(".brand-mask");
+//   const overlayCard = document.querySelector(".overlay-card");
+
+//   const mm = gsap.matchMedia();
+//   mm.add("(min-width: 768px)", () => {
+//     const tl = gsap.timeline();
+
+//     tl.to(images[0], { xPercent: -200, yPercent: -15, scale: 1.5 }, 0)
+//       .to(images[1], { xPercent: 200, yPercent: -15, scale: 1.5 }, 0)
+//       .to(images[2], { yPercent: -40, scale: 1.8 }, 0.3)
+//       .to(images[3], { yPercent: 40, scale: 1.8 }, 0.3)
+//       .to(images[4], { xPercent: -250, yPercent: -30, scale: 1.6 }, 0.6)
+//       .to(images[5], { xPercent: 250, yPercent: -30, scale: 1.6 }, 0.6)
+//       .fromTo(brand, { scale: 1 }, { scale: 1000, duration: 4, ease: "power3.inOut" }, 1)
+//       .fromTo(overlayCard, { opacity: 0 }, { opacity: 1, duration: 1 }, 3);
+
+//     ScrollTrigger.create({
+//       trigger: pinContainer,
+//       pin: true,
+//       start: "top top",
+//       end: "+=300%",
+//       scrub: 1,
+//       animation: tl
+//     });
+//   });
+// });
+
+
+
+
+
+

@@ -35,6 +35,7 @@
   </nav>
 
   <!-- HERO -->
+   <div>
   <header id="home" class="hero d-flex align-items-center justify-content-center text-center mt-5">
     <i class="bi bi-shield-lock float-icon" style="top:10%;left:15%;font-size:90px;"></i>
     <i class="bi bi-camera-video float-icon" style="top:70%;right:10%;font-size:85px;animation-delay:1.2s;"></i>
@@ -42,38 +43,40 @@
       <div class="hero-inner">
         <div class="shield-wrap mb-4">
 
-          <!-- GOLD SHIELD -->
-          <svg class="shield-svg" viewBox="0 0 120 120" width="160" height="160">
-            <defs>
-              <!-- ✅ Mint to white gradient -->
-              <linearGradient id="gradMint" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#00FFCC" /> <!-- Mint -->
-                <stop offset="100%" stop-color="#FFFFFF" /> <!-- White -->
-              </linearGradient>
 
-              <!-- ✅ Glow filter for neon-mint effect -->
-              <filter id="glowHero" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="5" result="coloredBlur" />
-                <feMerge>
-                  <feMergeNode in="coloredBlur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
-            </defs>
+<!-- GOLD SHIELD SVG -->
+<svg class="shield-svg" viewBox="0 0 120 120" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- ✨ Gold Gradient -->
+    <linearGradient id="gradGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700" /> <!-- Bright Gold -->
+      <stop offset="50%" stop-color="#FFC300" /> <!-- Rich Gold -->
+      <stop offset="100%" stop-color="#FFFFFF" /> <!-- White Highlight -->
+    </linearGradient>
 
-            <!-- ✅ Shield Body -->
-            <path class="shield-body" d="M60 6 L18 20 v24c0 25 18 45 42 50 24-5 42-25 42-50V20L60 6z"
-              fill="url(#gradMint)" filter="url(#glowHero)">
-            </path>
+    <!-- 🌟 Glow Filter for gold shine -->
+    <filter id="glowGold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
 
-            <!-- ✅ Lock Body -->
-            <rect x="48" y="46" width="24" height="20" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.5">
-            </rect>
+  <!-- 🛡 Shield Body -->
+  <path d="M60 6 L18 20 v24c0 25 18 45 42 50 24-5 42-25 42-50V20L60 6z"
+        fill="url(#gradGold)" stroke="#000000" stroke-width="2" filter="url(#glowGold)"/>
 
-            <!-- ✅ Lock Shackle -->
-            <path class="lock-shackle" d="M52 46c0-6 4-10 8-10s8 4 8 10" fill="none" stroke="#00FFCC" stroke-width="2.4"
-              stroke-linecap="round" />
-          </svg>
+  <!-- 🔒 Lock Body -->
+  <rect x="48" y="46" width="24" height="20" rx="3"
+        fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <!-- 🔒 Lock Shackle -->
+  <path d="M52 46c0-6 4-10 8-10s8 4 8 10"
+        fill="none" stroke="#FFD700" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+
 
 
           <span class="pulse-ring"></span>
@@ -93,131 +96,103 @@
       </div>
     </div>
   </header>
+   </div>
 
 
-  <div class="sting-bg">
-    <section class="masking-section">
-      <div class="masking-section__wrapper">
 
-        <figure class="image-block image-1">
-          <img src="./images/one.jpeg" alt="Fashion model" />
-          <figcaption>Indigo Sculptural</figcaption>
-        </figure>
-        <figure class="image-block image-2">
-          <img src="./images/two.jpeg" alt="Fashion model" />
-          <figcaption>Cream Cropsleeves</figcaption>
-        </figure>
-        <figure class="image-block image-3">
-          <img src="./images/three.jpeg" alt="Fashion model" />
-          <figcaption>Black Slickfit</figcaption>
-        </figure>
-        <figure class="image-block image-4">
-          <img src="./images/four.jpeg" alt="Fashion model" />
-          <figcaption>Teal Modeva</figcaption>
-        </figure>
-        <figure class="image-block image-5">
-          <img src="./images/five.jpeg" alt="Fashion model" />
-          <figcaption>Burgundy Liberatio</figcaption>
-        </figure>
-        <figure class="image-block image-6">
-          <img src="./images/six.jpeg" alt="Fashion model" />
-          <figcaption>Ebony Half-cut</figcaption>
-        </figure>
+<div class="sting-bg">
+  <section class="masking-section">
+    <div class="masking-section__wrapper">
 
-        <div class="masking-section__overlay-container">
-          <article class="overlay-content">
-            <h2 class="overlay-content__heading">
-              <span class="brand-mask">Stirling</span>
-            </h2>
-            <!-- <p class="overlay-content__helper">Scroll To Reveal</p> -->
+      <!-- Image Elements -->
+      <figure class="image-block image-1">
+        <img src="./images/one.jpeg" alt="Security image 1" />
+        <figcaption>Corporate Security</figcaption>
+      </figure>
+      <figure class="image-block image-2">
+        <img src="./images/two.jpeg" alt="Security image 2" />
+        <figcaption>Event Security</figcaption>
+      </figure>
+      <figure class="image-block image-3">
+        <img src="./images/three.jpeg" alt="Security image 3" />
+        <figcaption>Hospitality Safety</figcaption>
+      </figure>
+      <figure class="image-block image-4">
+        <img src="./images/four.jpeg" alt="Security image 4" />
+        <figcaption>Technology Protection</figcaption>
+      </figure>
+      <figure class="image-block image-5">
+        <img src="./images/five.jpeg" alt="Security image 5" />
+        <figcaption>Industrial Surveillance</figcaption>
+      </figure>
+      <figure class="image-block image-6">
+        <img src="./images/six.jpeg" alt="Security image 6" />
+        <figcaption>Personal Safety</figcaption>
+      </figure>
 
-            <!-- ✅ Custom content div replacing video -->
-            <div class="overlay-card">
-              <section class="stringling-about bg-dark text-light">
-                <div class="container" style=" position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); ">
-                  <div class="text-center mt-5 mb-5">
-                    <h6 class="text-uppercase fw-semibold text-success mt-5">Professional Solutions for Peace of Mind
-                    </h6>
-                    <h2 class="fw-bold mb-3">Your Trusted Security Partner</h2>
-                    <p class="text-secondary mb-5">
-                      Creating a safe and secure environment with professional solutions for peace of mind.<br>
-                      Based in <strong>Glasgow</strong>, we proudly serve clients across Scotland — including
-                      <strong>Edinburgh, Stirling, Aberdeen,</strong> and <strong>Dundee</strong> — delivering tailored,
-                      high-quality security for corporate, event, hospitality, and technology sectors.
-                    </p>
-                  </div>
+      <!-- Overlay text -->
+      <h2 class="brand-mask">Stringling</h2>
 
-                  <div class="row g-4">
+      <!-- Overlay card content -->
+      <div class="overlay-card">
+        <div class="container text-center">
+          <h6 class="fw-semibold text-warning text-uppercase">Professional Solutions for Peace of Mind</h6>
+          <h2 class="fw-bold mb-3 text-light">Your Trusted Security Partner</h2>
+          <p class="text-secondary mb-5">
+            Based in <strong>Glasgow</strong>, we proudly serve clients across Scotland — including
+            <strong>Edinburgh, Stirling, Aberdeen,</strong> and <strong>Dundee</strong> — delivering high-quality security for corporate, event, hospitality, and tech sectors.
+          </p>
 
-
-                    <!-- Mission -->
-                    <div class="col-md-6 col-lg-3">
-                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
-                        <div class="card-body">
-                          <h5 class="text-success fw-bold mb-3">Mission</h5>
-                          <p class="text-light mb-0">
-                            To provide trusted, professional security solutions that ensure safety and confidence.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Vision -->
-                    <div class="col-md-6 col-lg-3">
-                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
-                        <div class="card-body">
-                          <h5 class="text-success fw-bold mb-3">Vision</h5>
-                          <p class="text-light mb-0">
-                            To be Scotland’s leading and most trusted security partner.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Values -->
-                    <div class="col-md-6 col-lg-3">
-                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
-                        <div class="card-body">
-                          <h5 class="text-success fw-bold mb-3">Values</h5>
-                          <ul class="list-unstyled text-light mb-0">
-                            <li><strong>Integrity:</strong> Honest, transparent, respectful.</li>
-                            <li><strong>Professionalism:</strong> Highest industry standards.</li>
-                            <li><strong>Innovation:</strong> Modern, efficient solutions.</li>
-                            <li><strong>Commitment:</strong> Dedicated to client safety and satisfaction.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Services -->
-                    <div class="col-md-6 col-lg-3">
-                      <div class="card bg-black border-success border-2 h-100 shadow-sm">
-                        <div class="card-body">
-                          <h5 class="text-success fw-bold mb-3">Our Services</h5>
-                          <ul class="list-unstyled text-light mb-0">
-                            <li><strong>Corporate Security:</strong> Reliable protection for workplaces.</li>
-                            <li><strong>Event Security:</strong> Safe, seamless event coverage.</li>
-                            <li><strong>Hospitality Security:</strong> Professional protection for restaurants, pubs,
-                              and bars.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Mission</h5>
+                  <p>To provide trusted, professional security solutions that ensure safety and confidence.</p>
                 </div>
-              </section>
-
-
-
+              </div>
             </div>
-          </article>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Vision</h5>
+                  <p>To be Scotland’s leading and most trusted security partner.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Values</h5>
+                  <ul class="list-unstyled">
+                    <li><strong>Integrity:</strong> Honest, transparent, respectful.</li>
+                    <li><strong>Professionalism:</strong> Top industry standards.</li>
+                    <li><strong>Innovation:</strong> Smart, efficient solutions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Our Services</h5>
+                  <ul class="list-unstyled">
+                    <li>Corporate Security</li>
+                    <li>Event Management</li>
+                    <li>Hospitality & Retail Safety</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!-- row -->
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
 
 
