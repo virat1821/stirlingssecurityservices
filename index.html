@@ -2,480 +2,596 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stringling Security | London</title>
-  <link rel="stylesheet" href="./styletow.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR - Fashion Forward</title>
+    <link rel="stylesheet" href="templatemo-noir-fashion.css">
+    <!-- 
+TemplateMo 599 Noir Fashion
+https://templatemo.com/tm-599-noir-fashion
+-->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+<!-- ✅ Include Bootstrap CSS & JS (Add this in your <head> and before </body>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"> <img class="logo-png" src="./images/stringling-logo - Copy.png" alt=""
-          srcset=""> &nbsp;&nbsp;<span class="slogan-txt">Strong. Safe. Secure</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <div>
-    <header id="home" class="hero d-flex align-items-center justify-content-center text-center mt-5">
-      <i class="bi bi-shield-lock float-icon" style="top:10%;left:15%;font-size:90px;"></i>
-      <i class="bi bi-camera-video float-icon" style="top:70%;right:10%;font-size:85px;animation-delay:1.2s;"></i>
-      <div class="container position-relative z-3">
-        <div class="hero-inner">
-          <div class="shield-wrap mb-4">
-
-
-            <!-- GOLD SHIELD SVG -->
-            <svg class="shield-svg" viewBox="0 0 120 120" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <!-- ✨ Gold Gradient -->
-                <linearGradient id="gradGold" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#FFD700" /> <!-- Bright Gold -->
-                  <stop offset="50%" stop-color="#FFC300" /> <!-- Rich Gold -->
-                  <stop offset="100%" stop-color="#FFFFFF" /> <!-- White Highlight -->
-                </linearGradient>
-
-                <!-- 🌟 Glow Filter for gold shine -->
-                <filter id="glowGold" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur stdDeviation="4" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-
-              <!-- 🛡 Shield Body -->
-              <path d="M60 6 L18 20 v24c0 25 18 45 42 50 24-5 42-25 42-50V20L60 6z" fill="url(#gradGold)"
-                stroke="#000000" stroke-width="2" filter="url(#glowGold)" />
-
-              <!-- 🔒 Lock Body -->
-              <rect x="48" y="46" width="24" height="20" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
-
-              <!-- 🔒 Lock Shackle -->
-              <path d="M52 46c0-6 4-10 8-10s8 4 8 10" fill="none" stroke="#FFD700" stroke-width="2.4"
-                stroke-linecap="round" />
-            </svg>
-
-
-
-            <span class="pulse-ring"></span>
-          </div>
-
-          <h1 class="display-5 fw-bold hero-title text-glow helvetica-bold-oblique">Your trusted security partner</h1>
-
-          <p class="lead text-white hero-sub helvetica-oblique">Stringling secures London’s assets with precision
-            surveillance and golden
-            reliability.</p>
-
-          <div class="d-flex justify-content-center gap-3 mt-3 fade-up">
-            <a href="#contact" class="btn btn-gold btn-lg rounded-pill px-4">Request Quote <i
-                class="fas fa-lock ms-2"></i></a>
-            <a href="#services" class="btn btn-outline-light btn-lg rounded-pill px-4">Explore Services <i
-                class="fas fa-shield-alt ms-2"></i></a>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
-
-
-
-  <div class="sting-bg">
-    <section class="masking-section">
-      <div class="masking-section__wrapper">
-
-        <!-- Image Elements -->
-        <figure class="image-block image-1">
-          <img src="./images/one.jpeg" alt="Security image 1" />
-          <figcaption>Corporate Security Solutions</figcaption>
-        </figure>
-        <figure class="image-block image-2">
-          <img src="./images/two.jpeg" alt="Security image 2" />
-          <figcaption>Event & Crowd Management</figcaption>
-        </figure>
-        <figure class="image-block image-3">
-          <img src="./images/three.jpeg" alt="Security image 3" />
-          <figcaption>Reception & Hospitality Security</figcaption>
-        </figure>
-        <figure class="image-block image-4">
-          <img src="./images/four.jpeg" alt="Security image 4" />
-          <figcaption>Technology & Cyber Protection</figcaption>
-        </figure>
-        <figure class="image-block image-5">
-          <img src="./images/five.jpeg" alt="Security image 5" />
-          <figcaption>Industrial & Warehouse Surveillance</figcaption>
-        </figure>
-        <figure class="image-block image-6">
-          <img src="./images/six.jpeg" alt="Security image 6" />
-          <figcaption>Executive & Personal Safety</figcaption>
-        </figure>
-
-
-        <!-- Overlay text -->
-        <h2 class="brand-mask">Stringling</h2>
-
-        <!-- Overlay card content -->
-        <div class="overlay-card">
-          <div class="overlay-card">
-            <div class="container text-center">
-              <h6 class="fw-semibold text-warning text-uppercase text-glow helvetica-bold-oblique">Professional
-                Solutions for Peace of Mind</h6>
-              <h2 class="fw-bold mb-3 text-light">Your Trusted Security Partner</h2>
-              <p class="text-secondary mb-5">
-                Based in <strong>Glasgow</strong>, we proudly serve clients across Scotland — including
-                <strong>Edinburgh, Stirling, Aberdeen,</strong> and <strong>Dundee</strong> — delivering high-quality
-                security for corporate, event, hospitality, and tech sectors.
-              </p>
-
-              <div class="row g-4">
-                <!-- Mission -->
-                <div class="col-md-6 col-lg-3">
-                  <div class="flip-card h-100">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front card">
-                        <div class="card-body">
-                          <h5>Mission</h5>
-                          <p>To provide trusted, professional security solutions that ensure safety and confidence.</p>
-                        </div>
-                      </div>
-                      <div class="flip-card-back card">
-                        <div class="card-body">
-                          <h5>Commitment</h5>
-                          <p>Delivering dependable, on-time protection services built on trust and precision.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Vision -->
-                <div class="col-md-6 col-lg-3">
-                  <div class="flip-card h-100">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front card">
-                        <div class="card-body">
-                          <h5>Vision</h5>
-                          <p>To be Scotland’s leading and most trusted security partner.</p>
-                        </div>
-                      </div>
-                      <div class="flip-card-back card">
-                        <div class="card-body">
-                          <h5>Future</h5>
-                          <p>Expanding innovative protection across the UK while maintaining excellence.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Values -->
-                <div class="col-md-6 col-lg-3">
-                  <div class="flip-card h-100">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front card">
-                        <div class="card-body">
-                          <h5>Values</h5>
-                          <ul class="list-unstyled">
-                            <li><strong>Integrity:</strong> Honest, transparent, respectful.</li>
-                            <li><strong>Professionalism:</strong> Top industry standards.</li>
-                            <li><strong>Innovation:</strong> Smart, efficient solutions.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="flip-card-back card">
-                        <div class="card-body">
-                          <h5>Ethics</h5>
-                          <p>Our team upholds discipline, dedication, and respect for every client relationship.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Services -->
-                <div class="col-md-6 col-lg-3">
-                  <div class="flip-card h-100">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front card">
-                        <div class="card-body">
-                          <h5>Our Services</h5>
-                          <ul class="list-unstyled">
-                            <li>Corporate Security</li>
-                            <li>Event Management</li>
-                            <li>Hospitality & Retail Safety</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="flip-card-back card">
-                        <div class="card-body">
-                          <h5>Excellence</h5>
-                          <p>We tailor every service with technology and precision to ensure peace of mind.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- row -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img style="width: 120px; height: 80px;" src="./images/stringling-logo - Copy.png" alt="" srcset="">
+                <!-- <span class="logo-text">NOIR</span> -->
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-
         </div>
-      </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-container" style="margin-top: 50px;">
+            <div class="hero-left">
+                <div class="hero-badge">Strong. Safe. Secure.</div>
+                <h1 class="hero-title">
+                    <span class="line"><span>Your trusted</span></span>
+                    <span class="line"> <span class="accent">security</span>
+                        <span class="line"><span>partner</span></span>
+                </h1>
+                <p class="hero-description">
+                    Creating a safe and secure environment
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">250+</span>
+                        <span class="stat-label">Secured Properties</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Active Monitoring</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Incident Prevention Rate</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="#services" class="cta-button primary">Explore Services</a>
+                    <a href="#contact" class="cta-button outline">Request Quote</a>
+                </div>
+
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/bg-one.jpeg" alt="Fashion Model 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/bg-two.jpeg" alt="Fashion Model 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/event.jpeg" alt="Fashion Model 3">
+                        </div>
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="floating-tags">
+                        <div class="tag">Limited Edition</div>
+                        <div class="tag">Handcrafted</div>
+                        <div class="tag">Premium Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
     </section>
-  </div>
 
-
-
-
-
-
-  <!-- SERVICES -->
-  <section class="services text-center">
-    <div class="container">
-      <h2 class="text-glow mb-5 helvetica-bold-oblique">Our Security Solutions</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-building-shield"></i>
-            </div>
-            <h5>Corporate Security</h5>
-            <p>Expert protection for corporate environments.</p>
-          </div>
+    <section class="collections" id="service">
+        <div class="section-header">
+            <h2 class="section-title">Tailored security solutions</h2>
+            <p class="section-subtitle">Expert protection for every need</p>
         </div>
 
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-people-group"></i>
-            </div>
-            <h5>Event Security & Crowd Management</h5>
-            <p>Seamless safety for events of all sizes.</p>
-          </div>
-        </div>
+        <!-- <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="women">Women</button>
+            <button class="tab-btn" data-category="men">Men</button>
+            <button class="tab-btn" data-category="accessories">Accessories</button>
+            <button class="tab-btn" data-category="limited">Limited Edition</button>
+        </div> -->
 
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-user-shield"></i>
-            </div>
-            <h5>Reception Security</h5>
-            <p>Professional security at your front desk.</p>
-          </div>
-        </div>
+      <div class="grid" id="collectionsGrid">
 
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-hard-hat"></i>
-            </div>
-            <h5>Construction Site Security</h5>
-            <p>Safeguarding your project from start to finish.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-user-tie"></i>
-            </div>
-            <h5>Retail Security Officers</h5>
-            <p>Dedicated security personnel for retail environments.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="icon-wrap">
-              <i class="fas fa-glass-cheers"></i>
-            </div>
-            <h5>Bar & Night Club Security</h5>
-            <p>Expert security for nightlife venues.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Bar & Night Club Security -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#barModal">
+    <div class="collection-thumbnail">
+      <img src="images/bar.jpeg" alt="Bar and Night Club Security">
     </div>
-  </section>
-
-
-  <!-- ABOUT -->
-  <section id="about" class="about text-center">
-    <div class="container">
-      <h2 class="text-glow mb-4 helvetica-bold-oblique">About Stringling Security</h2>
-      <p class="lead">Headquartered in London, Stringling Security provides cutting-edge safety solutions across
-        physical and digital domains. We blend innovation, intelligence, and integrity to secure what matters most.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-box">
-      <div class="contact-links">
-        <h2 class="contact-title">Get In Touch</h2>
-        <p class="contact-desc">
-          Let’s discuss your security needs or partnership opportunities.<br>
-          We’re available 24/7 to support your business.
-        </p>
-        <div class="links">
-          <a href="#" class="link"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="link"><i class="fab fa-github"></i></a>
-          <a href="#" class="link"><i class="fab fa-codepen"></i></a>
-          <a href="mailto:info@security.co.uk" class="link"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-
-      <div class="contact-form-wrapper">
-        <form>
-          <h3 class="form-title">Send a Message</h3>
-          <div class="form-item">
-            <input type="text" name="sender" required />
-            <label>Name</label>
-          </div>
-          <div class="form-item">
-            <input type="email" name="email" required />
-            <label>Email</label>
-          </div>
-          <div class="form-item">
-            <textarea name="message" required></textarea>
-            <label>Message</label>
-          </div>
-          <button class="submit-btn">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="super-footer">
-    <div class="container footer-grid">
-      <!-- About -->
-      <div class="footer-col">
-        <h3>About Stringling</h3>
-        <p>
-          Stringling is London’s trusted security partner — providing professional surveillance,
-          on-site guards, and advanced protection systems for businesses and communities.
-        </p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p><i class="bi bi-geo-alt"></i> London, UK</p>
-        <p><i class="bi bi-telephone"></i> +44 1234 567 890</p>
-        <p><i class="bi bi-envelope"></i> info@stringling.com</p>
-
-        <div class="social-icons">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 Stringling Security. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-
-  <!-- SECURITY ALERT WIDGET -->
-  <div class="security-alert-widget">
-    <div class="alert-btn" id="alertToggle">
-      <i class="fas fa-bell"></i>
-      <span class="pulse-alert"></span>
-    </div>
-
-    <div class="alert-panel" id="alertPanel">
-      <div class="alert-header d-flex justify-content-between align-items-center">
-        <p class="m-0 text-glow"><i class="fas fa-shield-alt me-2"></i>Contact Us</p>
-        <button class="btn-close btn-close-white" id="alertClose"></button>
-      </div>
-      <div class="alert-body mt-3">
-        <ul class="list-unstyled text-start small">
-          <!-- <li><i class="fas fa-lock me-2 text-warning"></i>System audit completed successfully.</li>
-          <li><i class="fas fa-wifi me-2 text-warning"></i>Network firewall upgraded to premium layer.</li>
-          <li><i class="fas fa-user-secret me-2 text-danger"></i>Unauthorized access blocked instantly.</li>
-          <li><i class="fas fa-camera me-2 text-success"></i>All perimeter cameras fully operational.</li> -->
-          <!-- Clickable Contact Info -->
-          <li class="mt-3">
-            <i class="fas fa-phone me-2 text-info"></i>
-            <a href="tel:+447123456789" class="text-light text-decoration-none">
-              +44 7123 456 789
-            </a>
-          </li>
-          <li>
-            <i class="fas fa-envelope me-2 text-warning"></i>
-            <a href="mailto:info@security.co.uk" class="text-light text-decoration-none">
-              info@security.co.uk
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="card-content">
+      <span class="card-badge">Elite</span>
+      <h3 class="card-title">Bar & Night Club</h3>
+      <p class="card-subtitle">Expert security for nightlife venues.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#barModal">Learn More</a></p>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Security Alert Widget
-    const alertToggle = document.getElementById('alertToggle');
-    const alertPanel = document.getElementById('alertPanel');
-    const alertClose = document.getElementById('alertClose');
-    alertToggle.addEventListener('click', () => alertPanel.classList.toggle('active'));
-    alertClose.addEventListener('click', () => alertPanel.classList.remove('active'));
-  </script>
+  <!-- Corporate Security -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#corporateModal">
+    <div class="collection-thumbnail">
+      <img src="images/corporate.jpeg" alt="Corporate Security">
+    </div>
+    <div class="card-content">
+      <span class="card-badge">Professional</span>
+      <h3 class="card-title">Corporate Security</h3>
+      <p class="card-subtitle">Expert protection for corporate environments.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a></p>
+    </div>
+  </div>
+
+  <!-- Event & Crowd Management -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#eventModal">
+    <div class="collection-thumbnail">
+      <img src="images/event.jpeg" alt="Event Security">
+    </div>
+    <div class="card-content">
+      <span class="card-badge">Event Ready</span>
+      <h3 class="card-title">Event & Crowd Management</h3>
+      <p class="card-subtitle">Seamless safety for events of all sizes.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#eventModal">Learn More</a></p>
+    </div>
+  </div>
+
+  <!-- Reception Security -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#receptionModal">
+    <div class="collection-thumbnail">
+      <img src="images/reception.jpeg" alt="Reception Security">
+    </div>
+    <div class="card-content">
+      <span class="card-badge">Frontline</span>
+      <h3 class="card-title">Reception Security</h3>
+      <p class="card-subtitle">Professional security at your front desk.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#receptionModal">Learn More</a></p>
+    </div>
+  </div>
+
+  <!-- Construction Site Security -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#constructionModal">
+    <div class="collection-thumbnail">
+      <img src="images/construction.jpeg" alt="Construction Site Security">
+    </div>
+    <div class="card-content">
+      <span class="card-badge">On-Site</span>
+      <h3 class="card-title">Construction Site Security</h3>
+      <p class="card-subtitle">Safeguarding your project from start to finish.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#constructionModal">Learn More</a></p>
+    </div>
+  </div>
+
+  <!-- Retail Security -->
+  <div class="collection-card" data-bs-toggle="modal" data-bs-target="#retailModal">
+    <div class="collection-thumbnail">
+      <img src="images/retail.jpeg" alt="Retail Security">
+    </div>
+    <div class="card-content">
+      <span class="card-badge">Reliable</span>
+      <h3 class="card-title">Retail Security Officers</h3>
+      <p class="card-subtitle">Dedicated security personnel for retail environments.</p>
+      <p class="card-link"><a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#retailModal">Learn More</a></p>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <section class="featured" id="about">
+        <div class="featured-container">
+            <div class="featured-hero">
+                <div class="featured-content">
+                    <span class="label">Your trusted security partner - Stirling’s Security Services</span>
+                    <h2>Professional solutions for peace of mind</h2>
+                    <p>Your trusted security partner
+Creating a safe and secure environment with professional solutions for peace of mind.
+
+Based in Glasgow, we proudly serve clients across Scotland — including Edinburgh, Stirling, Aberdeen, and Dundee — delivering tailored, high-quality security for corporate, event, hospitality, and technology sectors.</p>
+
+                 <div class="feature-highlights">
+  <div class="highlight-item">
+    <div class="highlight-icon">🛡️</div>
+    <div class="highlight-title">Our Goal</div>
+    <div class="highlight-desc">
+    to protect people, property, and peace of mind through experienced professionals and advanced technology.
+    </div>
+  </div>
+
+  <div class="highlight-item">
+    <div class="highlight-icon">👮‍♂️</div>
+    <div class="highlight-title">Mission</div>
+    <div class="highlight-desc">
+      To provide trusted, professional security solutions that ensure safety and confidence.
+    </div>
+  </div>
+
+  <div class="highlight-item">
+    <div class="highlight-icon">🚨</div>
+    <div class="highlight-title">Vision</div>
+    <div class="highlight-desc">
+      To be Scotland’s leading and most trusted security partner.
+    </div>
+  </div>
+</div>
 
 
-  <script>
-    // Card fade-up animation on scroll
-    document.addEventListener("scroll", () => {
-      const reveals = document.querySelectorAll(".reveal-card");
-      reveals.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          card.classList.add("visible");
-        }
-      });
-    });
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="./indextwo.js"></script>
+                    <a href="#collections" class="feature-cta">Read More</a>
+                </div>
+
+                <div class="featured-image-section">
+                    <div class="featured-image-grid">
+                        <div class="featured-img">
+                            <img src="images/about-bg-one.jpeg" alt="Fashion Collection Showcase">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/about-bg-two.jpeg" alt="Luxury Fashion Details">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/about-bg-three.jpeg" alt="Artisan Craftsmanship">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials">
+  <div class="testimonials-header">
+    <h3>What Our Clients Say</h3>
+    <p class="section-subtitle">Real feedback from our trusted partners and customers</p>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-rating">★★★★★</div>
+      <div class="testimonial-quote">
+        "The professionalism of the security team has been exceptional. They are always punctual, alert, and
+        courteous. We feel completely confident in their hands."
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">J</div>
+        <div class="author-info">
+          <h4>James Walker</h4>
+          <p>Facilities Manager, TechCorp Ltd.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-rating">★★★★★</div>
+      <div class="testimonial-quote">
+        "We hired them for our corporate building and events — the service quality, quick response, and professional
+        attitude are top-notch. Highly recommend their team."
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">L</div>
+        <div class="author-info">
+          <h4>Laura Smith</h4>
+          <p>HR Director, BrightEdge Solutions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-rating">★★★★★</div>
+      <div class="testimonial-quote">
+        "Their security officers are reliable and well-trained. They’ve handled every situation calmly and
+        professionally. Our premises have never felt safer."
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">R</div>
+        <div class="author-info">
+          <h4>Robert Johnson</h4>
+          <p>Operations Head, Skyline Properties</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Visit Our Flagship Store</h3>
+                            <p>123 Fashion Avenue<br>
+                                Bangkok, Thailand 10110<br>
+                                Siam District</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>Main: <a href="tel:+66021234567">+66 02 123 4567</a><br>
+                                Support: <a href="tel:+66021234568">+66 02 123 4568</a><br>
+                                Mon-Fri, 9AM-6PM ICT</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>General: <a href="mailto:hello@noir.fashion">hello@noir.fashion</a><br>
+                                Support: <a href="mailto:support@noir.fashion">support@noir.fashion</a><br>
+                                Press: <a href="mailto:press@noir.fashion">press@noir.fashion</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.551370220076!2d100.53515!3d13.730314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993fa2f8c6d9%3A0x92cf0e47c4c2ed08!2sSilom%20MRT%20Station!5e0!3m2!1sen!2sth!4v1697000000000"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>STIRLING'S SECURITY</h3>
+      <p>
+        Providing trusted, professional, and technology-driven security services for businesses, events,
+        and properties across the UK. Your safety is our highest priority — 24/7 protection you can rely on.
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-link">f</a>
+        <a href="#" class="social-link">t</a>
+        <a href="#" class="social-link">i</a>
+        <a href="#" class="social-link">l</a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Corporate Security</a></li>
+        <li><a href="#">Event & Crowd Management</a></li>
+        <li><a href="#">Construction Site Security</a></li>
+        <li><a href="#">Reception Security</a></li>
+        <li><a href="#">Retail & Hospitality Security</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Client Login</a></li>
+        <li><a href="#">Request a Quote</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <ul>
+        <li><a href="#">📍 London, United Kingdom</a></li>
+        <li><a href="#">📞 +44 1234 567 890</a></li>
+        <li><a href="#">✉️ info@stirlingssecurity.co.uk</a></li>
+        <li><a href="#">🕒 24/7 Support Available</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Stirling's Security. All rights reserved. | Designed by 
+      <a href="#" target="_blank" rel="nofollow" style="color: var(--accent); text-decoration: none;">
+        Azenix 
+      </a>
+    </p>
+    <div class="payment-methods">
+      <div class="payment-icon">SECURE</div>
+      <div class="payment-icon">24/7</div>
+      <div class="payment-icon">UK</div>
+      <div class="payment-icon">CERT</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ✅ Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    We use cookies to improve your browsing experience and analyze our traffic. 
+    By continuing to use our site, you agree to our <a href="#">Privacy Policy</a>.
+  </p>
+  <button id="accept-cookies">Accept</button>
+</div>
+ 
+
+
+<!-- ====== MODALS ====== -->
+
+<!-- Bar Modal -->
+<div class="modal fade" id="barModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/bar.jpeg" class="img-fluid rounded-top" alt="Bar Security">
+      <div class="modal-body">
+        <h4>Bar & Night Club Security</h4>
+        <p>Ensure a safe and enjoyable atmosphere at your bar or night club with our professional Bar and Night Club Security services. Our trained personnel are skilled in conflict resolution, crowd management, and maintaining order while creating a welcoming environment for your guests. We understand the unique challenges of nightlife security and employ proactive measures to deter potential issues before they arise. With our commitment to professionalism and vigilance, we help you focus on providing an unforgettable experience for your patrons, ensuring their safety and your peace of mind.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Corporate Modal -->
+<div class="modal fade" id="corporateModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/corporate.jpeg" class="img-fluid rounded-top" alt="Corporate Security">
+      <div class="modal-body">
+        <h4>Corporate Security</h4>
+        <p>Stirling Security Services offers top-notch corporate security to safeguard your business premises. Our professional security officers are meticulously trained to protect offices, business parks, and high-value assets with the utmost discretion. We understand the unique challenges of corporate environments and tailor our approach to meet your specific needs. With a focus on maintaining a secure and productive atmosphere, we implement vigilant monitoring and proactive strategies to deter potential threats. Trust us to create a safe working environment where your employees and customers can thrive without disruption.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Event Modal -->
+<div class="modal fade" id="eventModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/event.jpeg" class="img-fluid rounded-top" alt="Event Security">
+      <div class="modal-body">
+        <h4>Event & Crowd Management</h4>
+        <p>Ensure a smooth and secure experience at your events with Stirling Security Services. Our skilled teams specialize in event security and crowd management, providing comprehensive safety planning and on-site management for concerts, corporate events, festivals, and private gatherings. We work closely with event organizers to assess risks and implement measures that guarantee guest safety. From managing entrances to monitoring crowd behavior, our dedicated personnel are trained to handle any situation with professionalism and efficiency. Let us take care of security, so you can focus on making your event a success.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Reception Modal -->
+<div class="modal fade" id="receptionModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/reception.jpeg" class="img-fluid rounded-top" alt="Reception Security">
+      <div class="modal-body">
+        <h4>Reception Security</h4>
+        <p>Ensure a smooth and secure experience at your events with Stirling Security Services. Our skilled teams specialize in event security and crowd management, providing comprehensive safety planning and on-site management for concerts, corporate events, festivals, and private gatherings. We work closely with event organizers to assess risks and implement measures that guarantee guest safety. From managing entrances to monitoring crowd behavior, our dedicated personnel are trained to handle any situation with professionalism and efficiency. Let us take care of security, so you can focus on making your event a success.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Construction Modal -->
+<div class="modal fade" id="constructionModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/construction.jpeg" class="img-fluid rounded-top" alt="Construction Site Security">
+      <div class="modal-body">
+        <h4>Construction Site Security</h4>
+        <p>Construction sites are frequent targets for theft, vandalism, and trespassing. Our construction site security solutions combine manned guarding, mobile patrols, and advanced monitoring to keep your equipment, materials, and workforce protected around the clock. We provide flexible coverage tailored to your site’s layout and schedule, ensuring your project stays secure, compliant, and on track.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Retail Modal -->
+<div class="modal fade" id="retailModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <img src="images/retail.jpeg" class="img-fluid rounded-top" alt="Retail Security">
+      <div class="modal-body">
+        <h4>Retail Security Officers</h4>
+        <p>Our Retail Security Officers are specially trained to ensure the safety and security of retail spaces. They provide a visible deterrent against theft and anti-social behavior, while also offering exceptional customer service to enhance the shopping experience. Our officers are equipped to handle various situations, from monitoring CCTV to managing incidents and emergencies. With their professional demeanor and conflict resolution skills, they create a safe environment for both staff and customers, allowing businesses to focus on what they do best—serving their clientele with confidence.</p>
+        <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  if (!localStorage.getItem("cookiesAccepted")) {
+    banner.style.display = "flex";
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    banner.style.display = "none";
+  });
+});
+</script>
+
+    <script src="templatemo-noir-scripts.js"></script>
 </body>
 
 </html>
