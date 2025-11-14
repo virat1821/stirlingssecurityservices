@@ -1,12 +1,3 @@
-// JavaScript Document
-
-/*
-
-TemplateMo 599 Noir Fashion
-
-https://templatemo.com/tm-599-noir-fashion
-
-*/
 
  // Hero Carousel
         const slides = document.querySelectorAll('.carousel-slide');
