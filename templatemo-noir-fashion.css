@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 599 Noir Fashion
-
-https://templatemo.com/tm-599-noir-fashion
-
-*/
 
 @charset "utf-8";
 /* CSS Document */
@@ -16,13 +10,7 @@ https://templatemo.com/tm-599-noir-fashion
 }
 
 :root {
-	/* --primary: #0a0a0a;
-	--accent: #ff3366;
-	--accent-hover: #ff1149;
-	--text-light: #ffffff;
-	--text-muted: #999;
-	--bg-dark: #000;
-	--bg-section: #0a0a0a; */
+
 
 	  /* === Brand Colors === */
   --primary: #000000; /* Jet Black */
@@ -1969,3 +1957,239 @@ footer {
 .btn-warning:hover {
   background-color: #dcae2a;
 }
+
+
+
+
+
+
+.aboutus {
+  /* background: var(--bg-section); */
+  background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.05), transparent 40%), linear-gradient(180deg, #000000, #111111);
+  padding: 200px 20px 20px 20px;
+  color: var(--text-light);
+}
+
+.aboutus-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  /* background: rgba(33, 49, 89, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(39, 68, 114, 0.18); */
+}
+
+.values-section h3 {
+  color: var(--accent);
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.values-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; /* adjust as needed for spacing */
+}
+
+.value-card {
+  background: var(--gray-charcoal);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--gold-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.value-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--gold-gradient);
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 6px 18px -10px var(--gold-deep);
+}
+
+.value-header i {
+  font-size: 2rem;
+  color: var(--gold-deep);
+  background: #fffbe5;
+  border-radius: 50%;
+  padding: 6px;
+  border: 2px solid #fffbe5;
+  box-shadow: 0 1.5px 6px #f8dc8c44;
+}
+
+.value-subcard {
+  background: var(--bg-dark);
+  padding: 20px;
+  color: var(--text-light);
+  font-size: 1rem;
+  border-top: 1.5px solid #fff2c5;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .values-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .aboutus-container {
+    padding: 16px;
+    border-radius: 1rem;
+  }
+}value-card { max-width: none; }
+
+.aboutus-header{
+	color: var(--gold-gradient) !important;
+}
+
+
+
+
+
+
+/* shcedulingorm */
+
+.meeting-form {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: var(--bg-section);
+    padding: 2.2rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px var(--gold-shadow);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meeting-form h2 {
+  font-size: 1.95rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.meeting-form p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.meeting-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.meeting-form label span {
+  color: #ff5555;
+  margin-left: 4px;
+}
+
+.meeting-form input[type="date"],
+.meeting-form input[type="text"],
+.meeting-form input[type="email"],
+.meeting-form input[type="tel"],
+.meeting-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1.15rem;
+  border: 2px solid var(--gray-charcoal);
+  border-radius: 12px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
+}
+
+.meeting-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(180%) contrast(100%);
+}
+
+.meeting-form input[type="date"]:focus,
+.meeting-form input[type="text"]:focus,
+.meeting-form input[type="email"]:focus,
+.meeting-form input[type="tel"]:focus,
+.meeting-form textarea:focus {
+  border-color: var(--gold-light);
+  background: #111111;
+  box-shadow: 0 0 5px var(--gold-light);
+  outline: none;
+}
+
+.meeting-form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.meeting-form legend {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+.meeting-form input[type="checkbox"] {
+  accent-color: var(--gold-light);
+  margin-right: 10px;
+  transform: scale(1.1);
+}
+
+.meeting-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.meeting-form button {
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+  background: var(--gold-gradient);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  /* box-shadow: 0 6px 14px var(--gold-shadow); */
+}
+
+.meeting-form button:hover,
+.meeting-form button:focus {
+  background: var(--gold-deep);
+  color: #fff;
+  outline: none;
+  box-shadow: 0 4px 47px rgba(255, 231, 15, 0.2);
+}
+
+@media (max-width: 520px) {
+  .meeting-form {
+    margin: 1rem 1rem 3rem;
+    padding: 2rem 1.3rem;
+    border-radius: 16px;
+  }
+  .meeting-form h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
