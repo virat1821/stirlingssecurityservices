@@ -250,3 +250,99 @@
         });
 
       
+
+
+
+
+
+
+        (function () {
+  const form = document.getElementById("contactForm");
+  const successBox = document.getElementById("successBox");
+
+  if (!form) return console.warn("contactForm not found.");
+  if (!successBox) return console.warn("successBox not found.");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Prepare AJAX endpoint for FormSubmit:
+    // transform https://formsubmit.co/you@me.com  ->  https://formsubmit.co/ajax/you@me.com
+    let action = (form.getAttribute("action") || "").trim();
+    if (!action) {
+      showError("Form action is missing. Please set action to https://formsubmit.co/vishnuprakash9597@gmail.com");
+      return;
+    }
+    let ajaxEndpoint;
+    if (action.includes("/ajax/")) {
+      ajaxEndpoint = action; // already ajax url
+    } else {
+      // make sure it uses the ajax endpoint
+      ajaxEndpoint = action.replace("https://formsubmit.co/", "https://formsubmit.co/ajax/");
+    }
+
+    // UI: hide submit button to prevent double submit
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    // Optional: hide form while showing loading state
+    form.style.opacity = "0.6";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(ajaxEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        // try to read json error
+        let errText = "Failed to send message. Please try again.";
+        try {
+          const errJson = await res.json();
+          if (errJson && errJson.message) errText = errJson.message;
+        } catch (_) {}
+        throw new Error(errText);
+      }
+
+      // success
+      showSuccess("Thank you! Your message has been sent.");
+      // optionally show server response
+      // const data = await res.json();
+
+      // hide form and show success briefly, then restore
+      form.style.display = "none";
+
+      setTimeout(() => {
+        successBox.style.display = "none";
+        form.reset();
+        form.style.display = "block";
+        form.style.opacity = "1";
+        if (submitBtn) submitBtn.disabled = false;
+      }, 2000); // 2 seconds (adjust if you want longer)
+    } catch (err) {
+      console.error(err);
+      showError(err.message || "An error occurred while sending the form.");
+      form.style.opacity = "1";
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+
+  function showSuccess(msg) {
+    successBox.classList.remove("error");
+    successBox.classList.add("success");
+    successBox.innerText = msg;
+    successBox.style.display = "block";
+  }
+
+  function showError(msg) {
+    successBox.classList.remove("success");
+    successBox.classList.add("error");
+    successBox.innerText = msg;
+    successBox.style.display = "block";
+  }
+})();
