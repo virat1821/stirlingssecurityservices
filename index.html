@@ -19,7 +19,7 @@ https://templatemo.com/tm-599-noir-fashion
 <body>
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#home" class="logo-link">
+      <a href="#" class="logo-link">
         <img style="width: 130px; height: 80px;" src="./images/stirling-new-logo.jpeg" alt="" srcset="">
         <!-- <span class="logo-text">NOIR</span> -->
       </a>
@@ -28,7 +28,8 @@ https://templatemo.com/tm-599-noir-fashion
         <li><a href="#service" class="nav-link">Service</a></li>
         <li><a href="#about" class="nav-link">About Us</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+        <li><a href="./scheduling.html" class="nav-link">Book Now</a></li>
+        <li><a href="tel:+66021234567" class="nav-cta">Get In Touch</a></li>
       </ul>
       <div class="menu-toggle" id="menuToggle">
         <span></span>
@@ -44,6 +45,7 @@ https://templatemo.com/tm-599-noir-fashion
       <li><a href="#service">Service</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="./scheduling.html">Book Now</a></li>
     </ul>
   </div>
 
@@ -343,32 +345,46 @@ https://templatemo.com/tm-599-noir-fashion
 
       <div class="contact-content">
         <div class="contact-form-wrapper">
-          <form id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."
-                required></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Message</button>
-          </form>
+        
+            <form id="contactForm" action="https://formsubmit.co/YOvishnuprakash9597@gmail.com" method="POST">
+  <!-- Optional FormSubmit hidden fields -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New Contact Form Message">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="John" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+  </div>
+
+  <button type="submit" class="form-submit">Send Message</button>
+</form>
+
+<!-- Success / Error box -->
+<div id="successBox" style="display:none; padding:16px; margin-top:12px; border-radius:6px;"></div>
+
+
         </div>
 
         <div class="contact-info">
@@ -407,7 +423,7 @@ https://templatemo.com/tm-599-noir-fashion
       <div class="map-section">
         <div class="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.551370220076!2d100.53515!3d13.730314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2993fa2f8c6d9%3A0x92cf0e47c4c2ed08!2sSilom%20MRT%20Station!5e0!3m2!1sen!2sth!4v1697000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55927.06428542819!2d-4.322749330469224!3d55.86135566546788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562cc963ef%3A0x540b0b0d33f70c7b!2sGlasgow%2C%20UK!5e0!3m2!1sen!2sin!4v1709298340000"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -432,14 +448,15 @@ https://templatemo.com/tm-599-noir-fashion
       </div>
 
       <div class="footer-column">
-        <h4>Our Services</h4>
+        <!-- <h4>Our Services</h4>
         <ul>
           <li><a href="#">Corporate Security</a></li>
           <li><a href="#">Event & Crowd Management</a></li>
           <li><a href="#">Construction Site Security</a></li>
           <li><a href="#">Reception Security</a></li>
           <li><a href="#">Retail & Hospitality Security</a></li>
-        </ul>
+        </ul> -->
+        <img style="width: 160px; height: 160px;" src="./images/sia.jpg" alt="" srcset="">
       </div>
 
       <div class="footer-column">
@@ -448,7 +465,6 @@ https://templatemo.com/tm-599-noir-fashion
           <li><a href="#">About Us</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Client Login</a></li>
           <li><a href="#">Request a Quote</a></li>
         </ul>
       </div>
@@ -505,7 +521,7 @@ https://templatemo.com/tm-599-noir-fashion
             challenges of nightlife security and employ proactive measures to deter potential issues before they arise.
             With our commitment to professionalism and vigilance, we help you focus on providing an unforgettable
             experience for your patrons, ensuring their safety and your peace of mind.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -524,7 +540,7 @@ https://templatemo.com/tm-599-noir-fashion
             our approach to meet your specific needs. With a focus on maintaining a secure and productive atmosphere, we
             implement vigilant monitoring and proactive strategies to deter potential threats. Trust us to create a safe
             working environment where your employees and customers can thrive without disruption.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -543,7 +559,7 @@ https://templatemo.com/tm-599-noir-fashion
             organizers to assess risks and implement measures that guarantee guest safety. From managing entrances to
             monitoring crowd behavior, our dedicated personnel are trained to handle any situation with professionalism
             and efficiency. Let us take care of security, so you can focus on making your event a success.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -562,7 +578,7 @@ https://templatemo.com/tm-599-noir-fashion
             organizers to assess risks and implement measures that guarantee guest safety. From managing entrances to
             monitoring crowd behavior, our dedicated personnel are trained to handle any situation with professionalism
             and efficiency. Let us take care of security, so you can focus on making your event a success.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -579,7 +595,7 @@ https://templatemo.com/tm-599-noir-fashion
             security solutions combine manned guarding, mobile patrols, and advanced monitoring to keep your equipment,
             materials, and workforce protected around the clock. We provide flexible coverage tailored to your site’s
             layout and schedule, ensuring your project stays secure, compliant, and on track.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -598,7 +614,7 @@ https://templatemo.com/tm-599-noir-fashion
             monitoring CCTV to managing incidents and emergencies. With their professional demeanor and conflict
             resolution skills, they create a safe environment for both staff and customers, allowing businesses to focus
             on what they do best—serving their clientele with confidence.</p>
-          <a href="#appointment" class="cta-button primary">Schedule Appointment</a>
+          <a href="./scheduling.html" class="cta-button primary">Schedule Appointment</a>
         </div>
       </div>
     </div>
@@ -629,7 +645,125 @@ https://templatemo.com/tm-599-noir-fashion
     });
   </script>
 
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  // Hide form and show message
+  form.style.display = "none";
+  document.getElementById("successBox").style.display = "block";
+
+  // After 2 seconds, hide success and show form again
+  setTimeout(() => {
+    document.getElementById("successBox").style.display = "none";
+    form.reset();
+    form.style.display = "block";
+  }, 2000);
+});
+
+</script>
+
   <script src="templatemo-noir-scripts.js"></script>
+
+
+<script>
+  (function () {
+  const form = document.getElementById("contactForm");
+  const successBox = document.getElementById("successBox");
+
+  if (!form) return console.warn("contactForm not found.");
+  if (!successBox) return console.warn("successBox not found.");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Prepare AJAX endpoint for FormSubmit:
+    // transform https://formsubmit.co/you@me.com  ->  https://formsubmit.co/ajax/you@me.com
+    let action = (form.getAttribute("action") || "").trim();
+    if (!action) {
+      showError("Form action is missing. Please set action to https://formsubmit.co/vishnuprakash9597@gmail.com");
+      return;
+    }
+    let ajaxEndpoint;
+    if (action.includes("/ajax/")) {
+      ajaxEndpoint = action; // already ajax url
+    } else {
+      // make sure it uses the ajax endpoint
+      ajaxEndpoint = action.replace("https://formsubmit.co/", "https://formsubmit.co/ajax/");
+    }
+
+    // UI: hide submit button to prevent double submit
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    // Optional: hide form while showing loading state
+    form.style.opacity = "0.6";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(ajaxEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        // try to read json error
+        let errText = "Failed to send message. Please try again.";
+        try {
+          const errJson = await res.json();
+          if (errJson && errJson.message) errText = errJson.message;
+        } catch (_) {}
+        throw new Error(errText);
+      }
+
+      // success
+      showSuccess("Thank you! Your message has been sent.");
+      // optionally show server response
+      // const data = await res.json();
+
+      // hide form and show success briefly, then restore
+      form.style.display = "none";
+
+      setTimeout(() => {
+        successBox.style.display = "none";
+        form.reset();
+        form.style.display = "block";
+        form.style.opacity = "1";
+        if (submitBtn) submitBtn.disabled = false;
+      }, 2000); // 2 seconds (adjust if you want longer)
+    } catch (err) {
+      console.error(err);
+      showError(err.message || "An error occurred while sending the form.");
+      form.style.opacity = "1";
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+
+  function showSuccess(msg) {
+    successBox.classList.remove("error");
+    successBox.classList.add("success");
+    successBox.innerText = msg;
+    successBox.style.display = "block";
+  }
+
+  function showError(msg) {
+    successBox.classList.remove("success");
+    successBox.classList.add("error");
+    successBox.innerText = msg;
+    successBox.style.display = "block";
+  }
+})();
+
+</script>
+
+
+  
 </body>
 
 </html>
