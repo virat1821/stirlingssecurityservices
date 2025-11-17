@@ -134,7 +134,7 @@ https://templatemo.com/tm-599-noir-fashion
       <!-- Bar & Night Club Security -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#barModal">
         <div class="collection-thumbnail">
-          <img src="images/bar.jpeg" alt="Bar and Night Club Security">
+          <img src="images/barr.png" alt="Bar and Night Club Security">
         </div>
         <div class="card-content">
           <span class="card-badge">Elite</span>
@@ -148,7 +148,7 @@ https://templatemo.com/tm-599-noir-fashion
       <!-- Corporate Security -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#corporateModal">
         <div class="collection-thumbnail">
-          <img src="images/corporate.jpeg" alt="Corporate Security">
+          <img src="images/corporate-sec.png" alt="Corporate Security">
         </div>
         <div class="card-content">
           <span class="card-badge">Professional</span>
@@ -162,7 +162,7 @@ https://templatemo.com/tm-599-noir-fashion
       <!-- Event & Crowd Management -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#eventModal">
         <div class="collection-thumbnail">
-          <img src="images/event.jpeg" alt="Event Security">
+          <img src="images/event.png" alt="Event Security">
         </div>
         <div class="card-content">
           <span class="card-badge">Event Ready</span>
@@ -190,7 +190,7 @@ https://templatemo.com/tm-599-noir-fashion
       <!-- Construction Site Security -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#constructionModal">
         <div class="collection-thumbnail">
-          <img src="images/construction.jpeg" alt="Construction Site Security">
+          <img src="images/civil.png" alt="Construction Site Security">
         </div>
         <div class="card-content">
           <span class="card-badge">On-Site</span>
@@ -204,7 +204,7 @@ https://templatemo.com/tm-599-noir-fashion
       <!-- Retail Security -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#retailModal">
         <div class="collection-thumbnail">
-          <img src="images/retail.jpeg" alt="Retail Security">
+          <img src="images/retail.png" alt="Retail Security">
         </div>
         <div class="card-content">
           <span class="card-badge">Reliable</span>
@@ -345,21 +345,16 @@ https://templatemo.com/tm-599-noir-fashion
 
       <div class="contact-content">
         <div class="contact-form-wrapper">
-        
-            <form id="contactForm" action="https://formsubmit.co/YOvishnuprakash9597@gmail.com" method="POST">
-  <!-- Optional FormSubmit hidden fields -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_subject" value="New Contact Form Message">
 
+          <form id="contactForm">
   <div class="form-row">
     <div class="form-group">
       <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstName" placeholder="John" required>
+      <input type="text" id="firstName" name="first_name" placeholder="John" required>
     </div>
     <div class="form-group">
       <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+      <input type="text" id="lastName" name="last_name" placeholder="Doe" required>
     </div>
   </div>
 
@@ -369,8 +364,8 @@ https://templatemo.com/tm-599-noir-fashion
   </div>
 
   <div class="form-group">
-    <label for="subject">Subject</label>
-    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+    <label for="mobile">Mobile No</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="Enter your number" required>
   </div>
 
   <div class="form-group">
@@ -380,9 +375,8 @@ https://templatemo.com/tm-599-noir-fashion
 
   <button type="submit" class="form-submit">Send Message</button>
 </form>
+<div id="formMessage" style="display:none;"></div>
 
-<!-- Success / Error box -->
-<div id="successBox" style="display:none; padding:16px; margin-top:12px; border-radius:6px;"></div>
 
 
         </div>
@@ -412,7 +406,8 @@ https://templatemo.com/tm-599-noir-fashion
             <div class="info-icon">✉️</div>
             <div class="info-content">
               <h3>Email Us</h3>
-              <p>General: <a href="mailto:info@stirlingssecurityservices.co.uk">info@stirlingssecurityservices.co.uk</a><br>
+              <p>General: <a
+                  href="mailto:info@stirlingssecurityservices.co.uk">info@stirlingssecurityservices.co.uk</a><br>
                 <!-- Support: <a href="mailto:support@noir.fashion">support@noir.fashion</a><br> -->
                 <!-- Press: <a href="mailto:press@noir.fashion">press@noir.fashion</a></p> -->
             </div>
@@ -512,7 +507,7 @@ https://templatemo.com/tm-599-noir-fashion
   <div class="modal fade" id="barModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/bar.jpeg" class="img-fluid rounded-top" alt="Bar Security">
+        <img src="images/barr.png" class="img-fluid rounded-top" alt="Bar Security">
         <div class="modal-body">
           <h4>Bar & Night Club Security</h4>
           <p>Ensure a safe and enjoyable atmosphere at your bar or night club with our professional Bar and Night Club
@@ -531,7 +526,7 @@ https://templatemo.com/tm-599-noir-fashion
   <div class="modal fade" id="corporateModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/corporate.jpeg" class="img-fluid rounded-top" alt="Corporate Security">
+        <img src="images/corporate-sec.png" class="img-fluid rounded-top" alt="Corporate Security">
         <div class="modal-body">
           <h4>Corporate Security</h4>
           <p>Stirling Security Services offers top-notch corporate security to safeguard your business premises. Our
@@ -550,7 +545,7 @@ https://templatemo.com/tm-599-noir-fashion
   <div class="modal fade" id="eventModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/event.jpeg" class="img-fluid rounded-top" alt="Event Security">
+        <img src="images/event.png" class="img-fluid rounded-top" alt="Event Security">
         <div class="modal-body">
           <h4>Event & Crowd Management</h4>
           <p>Ensure a smooth and secure experience at your events with Stirling Security Services. Our skilled teams
@@ -588,7 +583,7 @@ https://templatemo.com/tm-599-noir-fashion
   <div class="modal fade" id="constructionModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/construction.jpeg" class="img-fluid rounded-top" alt="Construction Site Security">
+        <img src="images/civil.png" class="img-fluid rounded-top" alt="Construction Site Security">
         <div class="modal-body">
           <h4>Construction Site Security</h4>
           <p>Construction sites are frequent targets for theft, vandalism, and trespassing. Our construction site
@@ -605,7 +600,7 @@ https://templatemo.com/tm-599-noir-fashion
   <div class="modal fade" id="retailModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/retail.jpeg" class="img-fluid rounded-top" alt="Retail Security">
+        <img src="images/retail.png" class="img-fluid rounded-top" alt="Retail Security">
         <div class="modal-body">
           <h4>Retail Security Officers</h4>
           <p>Our Retail Security Officers are specially trained to ensure the safety and security of retail spaces. They
@@ -645,125 +640,57 @@ https://templatemo.com/tm-599-noir-fashion
     });
   </script>
 
-  <script>
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
 
-  const form = e.target;
 
-  // Hide form and show message
-  form.style.display = "none";
-  document.getElementById("successBox").style.display = "block";
 
-  // After 2 seconds, hide success and show form again
-  setTimeout(() => {
-    document.getElementById("successBox").style.display = "none";
-    form.reset();
-    form.style.display = "block";
-  }, 2000);
-});
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init('YKBI_SkHmUGyD86At');
+  })();
 
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_qcwh51h', 'template_rr15h4b', this)
+      .then(() => {
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.style.color = "green";
+        formMessage.style.display = "block";
+        form.reset();
+        setTimeout(() => {
+          formMessage.style.display = "none";
+        }, 4000); // Hides message after 4 seconds
+      }, (error) => {
+        formMessage.textContent = "Failed to send message. Please try again.";
+        formMessage.style.color = "red";
+        formMessage.style.display = "block";
+        setTimeout(() => {
+          formMessage.style.display = "none";
+        }, 4000); // Hides message after 4 seconds
+      });
+  });
 </script>
+
+
+
+
+
+
+
+
+
+
 
   <script src="templatemo-noir-scripts.js"></script>
 
 
-<script>
-  (function () {
-  const form = document.getElementById("contactForm");
-  const successBox = document.getElementById("successBox");
-
-  if (!form) return console.warn("contactForm not found.");
-  if (!successBox) return console.warn("successBox not found.");
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    // Prepare AJAX endpoint for FormSubmit:
-    // transform https://formsubmit.co/you@me.com  ->  https://formsubmit.co/ajax/you@me.com
-    let action = (form.getAttribute("action") || "").trim();
-    if (!action) {
-      showError("Form action is missing. Please set action to https://formsubmit.co/vishnuprakash9597@gmail.com");
-      return;
-    }
-    let ajaxEndpoint;
-    if (action.includes("/ajax/")) {
-      ajaxEndpoint = action; // already ajax url
-    } else {
-      // make sure it uses the ajax endpoint
-      ajaxEndpoint = action.replace("https://formsubmit.co/", "https://formsubmit.co/ajax/");
-    }
-
-    // UI: hide submit button to prevent double submit
-    const submitBtn = form.querySelector('[type="submit"]');
-    if (submitBtn) submitBtn.disabled = true;
-
-    // Optional: hide form while showing loading state
-    form.style.opacity = "0.6";
-
-    const formData = new FormData(form);
-
-    try {
-      const res = await fetch(ajaxEndpoint, {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
-
-      if (!res.ok) {
-        // try to read json error
-        let errText = "Failed to send message. Please try again.";
-        try {
-          const errJson = await res.json();
-          if (errJson && errJson.message) errText = errJson.message;
-        } catch (_) {}
-        throw new Error(errText);
-      }
-
-      // success
-      showSuccess("Thank you! Your message has been sent.");
-      // optionally show server response
-      // const data = await res.json();
-
-      // hide form and show success briefly, then restore
-      form.style.display = "none";
-
-      setTimeout(() => {
-        successBox.style.display = "none";
-        form.reset();
-        form.style.display = "block";
-        form.style.opacity = "1";
-        if (submitBtn) submitBtn.disabled = false;
-      }, 2000); // 2 seconds (adjust if you want longer)
-    } catch (err) {
-      console.error(err);
-      showError(err.message || "An error occurred while sending the form.");
-      form.style.opacity = "1";
-      if (submitBtn) submitBtn.disabled = false;
-    }
-  });
-
-  function showSuccess(msg) {
-    successBox.classList.remove("error");
-    successBox.classList.add("success");
-    successBox.innerText = msg;
-    successBox.style.display = "block";
-  }
-
-  function showError(msg) {
-    successBox.classList.remove("success");
-    successBox.classList.add("error");
-    successBox.innerText = msg;
-    successBox.style.display = "block";
-  }
-})();
-
-</script>
 
 
-  
+
 </body>
 
 </html>
