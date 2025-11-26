@@ -377,7 +377,7 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-	height: 100vh;
+	/* height: 100vh; */
 	position: relative;
 	overflow: hidden;
 	background: #000;
@@ -2132,10 +2132,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-		.hero {
+		/* .hero {
     height: 115vh;
    
-}
+} */
 .hero-container{
 	margin-top: 0px !important;
 }
@@ -2686,4 +2686,83 @@ footer {
   background: rgba(231, 76, 60, 0.08);
   color: #e74c3c;
   border: 1px solid rgba(231, 76, 60, 0.12);
+}
+
+
+
+
+/* ================================
+   LOGO CONTAINER
+================================ */
+.logo-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+
+/* ================================
+   RESPONSIVE SVG SIZE
+================================ */
+.logo-svg {
+  width: 140px;    /* default desktop */
+  height: auto;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+/* For big tablets/small laptops */
+@media (max-width: 1024px) {
+  .logo-svg { width: 150px; }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .logo-svg { width: 130px; }
+}
+
+/* For normal mobile */
+@media (max-width: 520px) {
+  .logo-svg { width: 110px; }
+}
+
+/* For small mobile */
+@media (max-width: 380px) {
+  .logo-svg { width: 95px; }
+}
+
+
+
+
+.hero-description-top {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 6px; /* space between items */
+}
+
+.hero-description-top span {
+  white-space: nowrap; /* prevents breaking inside each label */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-description-top {
+    font-size: 16px;
+    gap: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-description-top {
+    font-size: 14px;
+    gap: 4px;
+  }
 }

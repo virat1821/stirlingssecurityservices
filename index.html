@@ -60,11 +60,30 @@
   </div>
 
   <section class="hero" id="home">
+
+
     <div class="hero-bg"></div>
-    <div class="hero-container" style="margin-top: 50px;">
+    <div class="hero-container" style="margin-top: 150px; margin-bottom: 50px;">
       <div class="hero-left">
-        <div class="hero-badge">Strong. Safe. Secure.</div>
+
+
+       
+
+        
+<p class="hero-description-top mt-1">
+  <span style="color:#D4AF37;">2025 Established</span> |
+  <span style="color:#FFFFFF;">20+ Years of Experience</span> |
+  <span style="color:#999999;">Serving All of Scotland</span>
+</p>
+
+
+
+
+
+        <div class="hero-badge mt-1">Strong. Safe. Secure.</div>
         <h1 class="hero-title">
+          
+
           <span class="line"><span>Your trusted</span></span>
           <span class="line"> <span class="accent">security</span>
             <span class="line"><span>partner</span></span>
@@ -112,11 +131,7 @@
               <span class="indicator" data-slide="2"></span>
             </div>
           </div>
-          <div class="floating-tags">
-            <div class="tag">Limited Edition</div>
-            <div class="tag">Handcrafted</div>
-            <div class="tag">Premium Quality</div>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -686,7 +701,45 @@
 
 
 
+<!-- Minimal JS to trigger different animation timings for the star (keeps it lively, not overwhelming) -->
+<script>
+/* Slight JS to randomize animation delay so the star feels organic */
+(function(){
+  const stars = document.querySelectorAll('.star');
+  stars.forEach((s, i) => {
+    const delay = (Math.random() * 2).toFixed(2) + 's';
+    s.style.animationDelay = delay;
+    // Slightly vary duration too
+    const dur = (1.9 + Math.random() * 1.2).toFixed(2) + 's';
+    s.style.animationDuration = dur;
+  });
 
+  // Optional: on hover make star do a quick bright shot
+  const wrap = document.querySelector('.logo-wrap');
+  wrap.addEventListener('mouseenter', () => {
+    stars.forEach(st => {
+      st.style.animation = 'shoot 1.1s linear 0s 1';
+      setTimeout(()=> {
+        // restore infinite animation after one-shot
+        st.style.animation = '';
+        // reapply randomized infinite values
+        const delay = (Math.random() * 2).toFixed(2) + 's';
+        const dur = (1.9 + Math.random() * 1.2).toFixed(2) + 's';
+        st.style.animation = `shoot ${dur} linear ${delay} infinite`;
+      }, 1200);
+    });
+  });
+
+  // Initialize infinite animation
+  stars.forEach(st => {
+    if(!st.style.animation) {
+      const delay = (Math.random() * 2).toFixed(2) + 's';
+      const dur = (1.9 + Math.random() * 1.2).toFixed(2) + 's';
+      st.style.animation = `shoot ${dur} linear ${delay} infinite`;
+    }
+  });
+})();
+</script>
 
 
 
