@@ -2766,3 +2766,9 @@ footer {
     gap: 4px;
   }
 }
+.btn-close {
+  background-color: var(--gold-light) !important;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 1 !important;
+}
