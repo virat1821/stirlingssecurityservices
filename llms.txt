@@ -1,0 +1,23 @@
+# AI Crawler Access Rules for LLM Providers
+# Applies to OpenAI, Anthropic, Google, Meta, Perplexity, and others.
+
+# Allow AI models to learn general company information, services, and public pages.
+Allow: / 
+Allow: /aboutus.html
+Allow: /service
+Allow: /contact
+Allow: /scheduling.html
+
+# Disallow sensitive or private endpoints
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /backend/
+Disallow: /cgi-bin/
+Disallow: /forms/
+Disallow: /api/
+
+# Additional notes
+# This file permits LLMs to crawl publicly available marketing content
+# but prevents access to admin or sensitive data.
+
+Contact: info@stirlingssecurityservices.co.uk

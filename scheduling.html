@@ -184,7 +184,7 @@ We pride ourselves on being different from the rest. Our fully uniformed, vetted
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
-      emailjs.init('YKBI_SkHmUGyD86At');  // Replace with your EmailJS public key
+      emailjs.init('YKBI_SkHmUGyD86At');  //YKBI_SkHmUGyD86At Replace with your EmailJS public key
     })();
 
     const form = document.getElementById('meetingForm');
@@ -193,7 +193,7 @@ We pride ourselves on being different from the rest. Our fully uniformed, vetted
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      emailjs.sendForm('service_qcwh51h', 'template_6bzejte', this)
+      emailjs.sendForm('service_qcsxnwq', 'template_6bzejte', this)
         .then(() => {
           formMessage.textContent = "✅ Your meeting request was submitted successfully!";
           formMessage.style.color = "green";

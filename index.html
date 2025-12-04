@@ -18,6 +18,7 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Stirling’s Security Services">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
   <!-- ✅ Include Bootstrap CSS & JS (Add this in your <head> and before </body>) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -162,7 +163,7 @@
       <!-- Bar & Night Club Security -->
       <div class="collection-card" data-bs-toggle="modal" data-bs-target="#barModal">
         <div class="collection-thumbnail">
-          <img src="images/stir-img.webp" alt="Bar and Night Club Security">
+          <img src="images/bar.webp" alt="Bar and Night Club Security">
         </div>
         <div class="card-content">
           <span class="card-badge">Elite</span>
@@ -532,7 +533,9 @@
   <div class="modal fade" id="barModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <img src="images/stir-img.webp" class="img-fluid rounded-top" alt="Bar Security">
+         <!-- Close Icon -->
+      <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <img src="images/bar.webp" class="img-fluid rounded-top" alt="Bar Security">
         <div class="modal-body">
           <h4>Bar & Night Club Security</h4>
           <p>Ensure a safe and enjoyable atmosphere at your bar or night club with our professional Bar and Night Club
@@ -551,6 +554,7 @@
   <div class="modal fade" id="corporateModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+             <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <img src="images/corporate.webp" class="img-fluid rounded-top" alt="Corporate Security">
         <div class="modal-body">
           <h4>Corporate Security</h4>
@@ -570,6 +574,7 @@
   <div class="modal fade" id="eventModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+              <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <img src="images/event.webp" class="img-fluid rounded-top" alt="Event Security">
         <div class="modal-body">
           <h4>Event & Crowd Management</h4>
@@ -589,6 +594,7 @@
   <div class="modal fade" id="receptionModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+              <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <img src="images/reception.webp" class="img-fluid rounded-top" alt="Reception Security">
         <div class="modal-body">
           <h4>Reception Security</h4>
@@ -608,6 +614,7 @@
   <div class="modal fade" id="constructionModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+              <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <img src="images/construction.webp" class="img-fluid rounded-top" alt="Construction Site Security">
         <div class="modal-body">
           <h4>Construction Site Security</h4>
@@ -625,6 +632,7 @@
   <div class="modal fade" id="retailModal" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+              <button type="button" class="btn-close  position-absolute end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         <img src="images/retail.webp" class="img-fluid rounded-top" alt="Retail Security">
         <div class="modal-body">
           <h4>Retail Security Officers</h4>
@@ -680,7 +688,7 @@
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      emailjs.sendForm('service_qcwh51h', 'template_rr15h4b', this)
+      emailjs.sendForm('service_qcsxnwq', 'template_rr15h4b', this)
         .then(() => {
           formMessage.textContent = "Message sent successfully!";
           formMessage.style.color = "green";
@@ -745,6 +753,15 @@
 </script>
 
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-51GJ3Q9ZCB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-51GJ3Q9ZCB');
+</script>
 
 
 

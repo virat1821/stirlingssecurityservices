@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /node/
+Disallow: /backend/
+Disallow: /cgi-bin/
+
+Allow: /
+
+Sitemap: https://stirlingssecurityservices.co.uk/sitemap.xml
